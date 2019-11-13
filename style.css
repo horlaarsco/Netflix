@@ -1,0 +1,169 @@
+body {
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+hr {
+  height: 6px;
+  background-color: #222222;
+  border: 0;
+  width: 98%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+header svg {
+  fill: red;
+  width: 100px;
+}
+
+header p {
+  background-color: red;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.try {
+  background-color: red;
+  padding: 13px 7px;
+  border-radius: 5px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.fsection {
+  position: relative;
+}
+
+.fsection::after {
+  content: "";
+  background: url(large.jpg);
+  /* background-size: contain; */
+  opacity: 0.5;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.free {
+  margin-top: -20px;
+}
+
+.simg {
+  width: 330px;
+  z-index: 1;
+}
+
+.stdown {
+  display: flex;
+  height: 50px;
+  margin: 0 auto;
+  width: 200px;
+  border: solid;
+  border-radius: 5px;
+  border-color: #222222;
+  padding: 6px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stdown img {
+  height: 50px;
+}
+
+#downtext {
+  margin-top: -20px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+.listfaq {
+  margin: 0 auto;
+}
+
+.listfaq li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  color: #727272;
+}
+
+.footlist {
+  display: flex;
+}
+
+.footlist li {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 650px) {
+  .navnav {
+    height: 50em;
+  }
+  .fsection::after {
+    bottom: -11em;
+  }
+  .fsection h1 {
+    font-size: 5em;
+  }
+
+  .fsection p {
+    font-size: 1.7em;
+  }
+  header {
+    margin: 0 50px;
+  }
+
+  .try {
+    width: 45%;
+  }
+
+  .footlist ul:nth-child(2) {
+    margin-left: 30%;
+  }
+
+  .fsection::after {
+    top: -150px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navnav {
+    height: 60em;
+  }
+  .fsection::after {
+    bottom: -28em;
+  }
+
+  .try {
+    width: 40%;
+  }
+
+  header {
+    height: 10%;
+  }
+}
