@@ -120,6 +120,73 @@ footer {
   margin-top: 10px;
 }
 
+
+.hide-mobile{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sheader{
+  width: 80%;
+  background-color: seagreen;
+  height:30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 16px;
+  
+}
+
+.scircle{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%; 
+}
+
+.whiteone{
+  display:flex;
+  justify-content: space-between;
+  width:50%;
+  background-color: #3f3f3f;
+  margin-left: 50%;
+  border-radius: 16px;
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 650px) {
   .navnav {
     height: 50em;
@@ -152,18 +219,92 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-  .navnav {
-    height: 60em;
+  .aon{
+    position: relative;
+    height: 32em;
+
   }
-  .fsection::after {
+
+  .aon h2{
+    font-size: 3rem;
+    line-height: 0.7;
+  }
+
+  .aon p{
+    font-size: 1.6rem;
+  }
+
+
+
+  
+.aon::after {
+  content: "";
+  background: url(bg.jpg);
+  /* background-size: contain; */
+  opacity: 0.5;
+  top: -100px;
+  left: -20%;
+  bottom: 0;
+  right: -20%;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+  .navnav {
+    height: auto;
+  }
+  /* .fsection::after {
     bottom: -28em;
+  } */
+
+  .fsection{
+    display: none;
+  }
+
+  hr:first-child{
+    display: none;
   }
 
   .try {
     width: 40%;
   }
 
-  header {
-    height: 10%;
+  header svg {    
+    width: 200px;
+}
+
+.tvsec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .hide-desktop{
+    display: none;
   }
+
+  .hide-mobile{
+    display: contents;
+    display: flex;
+
+  }
+
+  .footlist ul:nth-child(2) {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footlist ul:nth-child(3) {
+  margin-right: 10%;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+  section{
+    max-width: 1200px;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+
 }
